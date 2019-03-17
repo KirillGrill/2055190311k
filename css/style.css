@@ -1,0 +1,362 @@
+/*css reset*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font:12px/16px Arial, Helvetica, sans-serif;
+    color:#000;
+    margin:0;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+a {
+    color:#00f;
+}
+a:hover {text-decoration:none;}
+form, fieldset {
+    border-style:none;
+}
+
+input, button {
+    border-style:none;
+}
+/*css reset*/
+
+
+.infoAboutWorker {
+    margin: 1rem 1rem;
+    display:flex;
+    justify-content: center;
+}
+
+    .photoWrap {
+        width: max-content;
+    }
+
+        .photo {
+            width: 7.5rem;
+            border-radius: 50%;
+        }
+
+    .personalTextInformation {
+        padding-left: 0.625rem;
+    }
+
+        .name {
+            font-size: 0.75rem;
+            margin: 0.625rem 0;
+        }
+
+        .job {
+            color: #808080;
+            font-size: 0.85rem;
+        }
+
+        .slogan {
+            margin: 0.625rem 0;
+            padding: 0.7rem 0.7rem 0.7rem 0;
+            font-size: 0.875rem;
+            background-color: #fffbc8;
+            border-radius: 0.3125rem;
+            border: 1px solid #cecabf;
+        }
+
+        .chartTop {
+            font-size: 0.875rem;
+            text-align: right;
+            margin-right: 5%;
+        }
+
+        .chartBody{
+            margin: 0.625rem;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;;
+        }
+
+            .row1Wrap{
+                margin-top: 1.3125rem;
+            }
+
+            .row2Wrap {
+                margin: 1rem 0;
+            }
+
+            .row3Wrap{
+                margin-bottom: 1.3125rem;
+            }
+
+                .nameOfTheRow {
+                    font-size: 0.875rem;
+                    border: 1px solid #808080;
+                    border-radius: 0.3125rem;
+                    padding: 0.3125rem;
+                }
+
+                .valueOfTheRow{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    float: right;
+                    margin-right: 5%;
+                }
+
+                .background {
+                    width: 50%;
+                    position: absolute;
+                    background-color: #b1e19b;
+                }
+
+                .colorGreen {
+                    background-color: #b1e19b;
+                }
+
+                .colorBlue {
+                    background-color: #ace2f8;
+                }
+
+            .chartBottom {
+                margin-left: 0.625rem;
+                margin-bottom: 1rem;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+                .chartBottomValue {
+                    float: right;
+                    margin-right: 6%;
+                }
+
+.feedback {
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .feedbackTop{
+        margin: 0 0.75rem;
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+        .commentTabs {
+            display:flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+            .lastComments {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .allComments {
+                margin-left: 1rem;
+                font-size: 1rem;
+            }
+
+        .feedbackStatistic {
+            width: 24%;
+            display:flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+            .likeStatistic {
+                font-size: 0.75rem;
+                display: inline-flex;
+            }
+
+                .likeStatisticImg {
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+            .commentStatistic {
+                margin-left: 2.625rem;
+                font-size: 0.75rem;
+                display: inline-flex;
+            }
+
+                .commentStatisticImg {
+                    width: 1.1rem;
+                    height: 1.1rem;
+                }
+
+    .feedbackContent {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.25rem;
+    }
+        .commentator {
+            width: 42.5%;
+            float: left;
+            margin-top: 0.5rem;
+        }
+
+            .commentatorsName {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            .commentsDate {
+                color: #808080;
+                font-size: 0.85rem;
+                margin-left: 0.75rem;
+            }
+        .comment {
+            width: 42.5%;
+            background-color: #f2fbff;
+            border: 1px solid #cfcfcf;
+            margin: 1rem;
+        }
+
+            .commentText {
+                padding: 1rem;
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+    .feedbackBottom {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        height: 12rem;
+
+    }
+
+        .writeComment {
+            margin-top: 1.875rem;
+            width: 42.5%;
+        }
+
+            .writeCommentField {
+                width: 100%;
+                height: 4rem;
+                border-radius: 3px;
+                border: 1px solid #a9a9a9;
+            }
+
+        .sendComment {
+            margin-top: 1.5rem;
+            width: 42.5%;
+            display: flex;
+            justify-content: center;
+        }
+
+            .sendCommentButton {
+                width: 60%;
+                border-radius: 22px;
+                background-color: #fdd639;
+                font-size: 1.2rem;
+                color: #333333;
+                padding: 0.75rem 3rem;
+            }
+
+@media only screen and (max-width: 720px) {
+    .personalTextInformation {
+        width: 100%;
+    }
+
+    .feedbackStatistic {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1200px) {
+    .feedbackStatistic {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .commentator {
+        width: 48%;
+    }
+
+    .comment {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+    .commentator {
+        width: 65%;
+    }
+
+    .comment {
+        width: 65%;
+    }
+
+    .writeComment {
+        width: 65%;
+    }
+
+    .sendComment {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 800px) and  (max-width: 999px) {
+    .commentator {
+        width: 75%;
+    }
+
+    .comment {
+        width: 75%;
+    }
+
+    .writeComment {
+        width: 75%;
+    }
+
+    .sendComment {
+        width: 75%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and  (max-width: 799px) {
+    .commentator {
+        width: 85%;
+    }
+
+    .comment {
+        width: 85%;
+    }
+
+    .writeComment {
+        width: 85%;
+    }
+
+    .sendComment {
+        width: 85%;
+    }
+}
+
+@media only screen and  (max-width: 599px) {
+    .commentator {
+        width: 95%;
+    }
+
+    .comment {
+        width: 95%;
+    }
+
+    .writeComment {
+        width: 95%;
+    }
+
+    .sendComment {
+        width: 95%;
+    }
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="infoAboutWorker">
+    <div class="photoWrap">
+        <img src="img/photo.png" class="photo">
+    </div>
+    <div class="personalTextInformation">
+        <div class="name">
+            <h1>Вероника Ростова</h1>
+        </div>
+        <div class="job">
+            <span>Менеджер по продажам</span>
+        </div>
+        <div class="slogan">
+            <p>Подберу для Вас самые лучшие предложения. Мои услуги абсолютно бесплатны</p>
+        </div>
+        <div class="chartTop">
+            <span>Услуг</span>
+        </div>
+        <div class="chartBody">
+            <div class="row1Wrap">
+                <span class="nameOfTheRow colorGreen">Ручное бронирование</span>
+                <span class="valueOfTheRow">11</span>
+            </div>
+            <div class="row2Wrap">
+                <span class="nameOfTheRow colorBlue">Пакетные туры</span>
+                <span class="valueOfTheRow">3</span>
+            </div>
+            <div class="row3Wrap">
+                <span class="nameOfTheRow colorBlue">Отели</span>
+                <span class="valueOfTheRow">1</span>
+            </div>
+        </div>
+        <div class="chartBottom">
+            <span >Всего</span>
+            <span class="chartBottomValue">15</span>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="feedbackTop">
+        <div class="commentTabs">
+            <h1 class="lastComments">Последние отзывы</h1>
+            <a href="#" class="allComments">Все отзывы</a>
+        </div>
+        <div class="feedbackStatistic">
+            <div class="likeStatistic"><img src="img/heart.png" class="likeStatisticImg">131</div>
+            <div class="commentStatistic"><img src="img/mode_comment.png" class="commentStatisticImg">14</div>
+        </div>
+    </div>
+    <div id="feedbackContent" class="feedbackContent">
+            <!--js-->
+        <div class="commentator">
+            <span class="commentatorsName">Самуил</span>
+            <span class="commentsDate">13 октября 2011</span>
+        </div>
+        <div class="comment">
+            <p class="commentText">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!!</p>
+        </div>
+        <div class="commentator">
+            <span class="commentatorsName">Лилия Семёнова</span>
+            <span class="commentsDate">14 октября 2011</span>
+        </div>
+        <div class="comment">
+            <p class="commentText">Вероника, здравствуйте! Куницы — среднего роста пальцеходящие хищные, с короткими пятипалыми лапами, пальцы которых свободны и вооружены острыми когтями, мордочка острая с короткими ушами, разделёнными на две части. Тело длинное и стройное, хвост достигает половины длины тела.</p>
+        </div>
+    </div>
+    <div class="feedbackBottom">
+        <div class="writeComment">
+            <input id="writeCommentField" class="writeCommentField">
+        </div>
+        <div class="sendComment">
+            <button class="sendCommentButton" onclick="sendComment()">Написать консультанту</button>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
