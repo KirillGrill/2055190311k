@@ -4,6 +4,8 @@ function sendComment() {
     const commentText = document.createElement('p');
     const comment = commentator.cloneNode(true);
     const commentsDate = commentatorsName.cloneNode(true);
+    const partOfTheComment = document.createElement('img');
+    partOfTheComment.src = 'img/partOfTheComment.png';
 
     const feedbackContent = document.getElementById('feedbackContent');
     const writeCommentField = document.getElementById('writeCommentField');
@@ -64,6 +66,8 @@ function sendComment() {
     commentator.appendChild(commentatorsName);
     commentator.appendChild(commentsDate);
 
+    // comment.innerHTML =  '<img src="img/partOfTheComment.png" class="partOfTheComment">';
+    comment.appendChild(partOfTheComment);
     comment.appendChild(commentText);
 
     feedbackContent.appendChild(commentator);
@@ -71,6 +75,7 @@ function sendComment() {
 
     commentatorsName.classList.add('commentatorsName');
     commentsDate.classList.add('commentsDate');
+    partOfTheComment.classList.add('partOfTheComment');
     commentText.classList.add('commentText');
     commentator.classList.add('commentator');
     comment.classList.add('comment');
